@@ -1,0 +1,14 @@
+<h1> All the cupcakes your heart could desire <h1>
+<a href="/cupcakess/new"> Create New Cupcake </a>
+
+</br>
+
+
+
+<div class="list-group">
+
+<% @cupcake.each do |cupcake| %>
+    <li class="list-group-item list-group-item-action" > <%=cupcake.id%>  <a href="cupcakes/<%=cupcake.id%>" > <%= cupcake.name %> </a>  </li>
+<% end %>  
+  
+  </div>

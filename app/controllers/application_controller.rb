@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/cupcakes" do
-    @cupcake = Cupcake.all
+    @cupcakes = Cupcake.all
     erb :"cupcakes/index"
   end
 
